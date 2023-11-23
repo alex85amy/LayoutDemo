@@ -21,17 +21,18 @@ public class LoginServlet extends HttpServlet{
 		
 		String password = req.getParameter("password");
 		
-		// 預設用戶：username=user,password=123(ddsfdsfdsvvcbvcvdfgd134656)
-		boolean isPasswordMatch = BCrypt.checkpw(password,"$2a$10$tDzvATEP0SPFucbrCcYKUOGZ6s/KtvfIpVM3TRd8LlzrqCI/F0hiu");
+		// 預設用戶：username=user,password=123($2a$10$k0t0dIE4M4etzejry03pDeNsDJ3gaT4ZWxdf6uB/ZcP/nR.w8kzvS)
+		boolean isPasswordMatch = BCrypt.checkpw(password, "$2a$10$k0t0dIE4M4etzejry03pDeNsDJ3gaT4ZWxdf6uB/ZcP/nR.w8kzvS");
 		if("user".equals(username) && isPasswordMatch) {
 			resp.sendRedirect("./");
 			return;
 		}
 		
 		// 處理驗證沒有過的時候，要怎麼處理
-		req.setAttribute("error", "帳號或密碼輸入錯誤");
+		req.setAttribute("error", "帳號或密碼輸入錯誤!");
 		RequestDispatcher rd = req.getRequestDispatcher("./login.jsp");
 		rd.forward(req, resp);
+		
 	}
 
 }

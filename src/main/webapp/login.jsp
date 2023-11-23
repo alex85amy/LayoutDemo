@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-    <%
-    	String error
-    
-    %>
+<%
+
+	String error = (String)request.getAttribute("error");
+
+%>    
 <!DOCTYPE html>
 <html>
 	<head>
@@ -39,11 +40,9 @@
 	    	<form class="needs-validation" novalidate method="post" action="./login">
 	    	  <h4 class="text-center">Login</h4>
 	    	  <%
-	    	     if(error!= null){
-	    	    	 out.println();
-	    	     }
-	    	  
-	    	  
+	    	  	if(error != null) {
+	    	  		out.print("<p>"+error+"</p>");
+	    	  	}
 	    	  %>
 			  <div>
 			    <label for="username" class="form-label">Username</label>
