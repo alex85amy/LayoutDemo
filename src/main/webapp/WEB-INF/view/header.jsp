@@ -30,7 +30,7 @@
 	        </li>
 	      </ul>
 	    </div>
-	    <i class="bi bi-person-circle text-light h5 mb-0 d-none d-md-block"></i>
+	    <i class="bi bi-person-circle text-light h5 mb-0 d-none d-md-block" ></i>
 	  </div>
 	</nav>
 </body>
