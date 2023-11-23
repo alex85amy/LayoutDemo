@@ -11,7 +11,6 @@
 	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 	    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 	    <style>
-	    
 	    	body {
 	            font-family: Arial, sans-serif;
 	            background-color: #f4f4f4;
@@ -57,6 +56,8 @@
 	</body>
 </html>
 
+
+
 <script type="text/javascript">
 	//Example starter JavaScript for disabling form submissions if there are invalid fields
 	(function () {
@@ -79,3 +80,7 @@
 	    })
 	})()
 </script>
+
+
+
+
