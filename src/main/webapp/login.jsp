@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    <%
+    	String error
+    
+    %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -33,6 +38,13 @@
 	    <div class="d-flex justify-content-center align-items-center vh-100">
 	    	<form class="needs-validation" novalidate method="post" action="./login">
 	    	  <h4 class="text-center">Login</h4>
+	    	  <%
+	    	     if(error!= null){
+	    	    	 out.println();
+	    	     }
+	    	  
+	    	  
+	    	  %>
 			  <div>
 			    <label for="username" class="form-label">Username</label>
 			    <input type="text" class="form-control" id="username" name="username" value="" required>
