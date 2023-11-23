@@ -44,7 +44,7 @@
 			    <label for="password" class="form-label">Password</label>
 			    <input type="password" class="form-control" id="password" name="password" value="" required>
 			    <div class="invalid-feedback">
-			      請輸入密碼123
+			      請輸入密碼
 			    </div>
 			  </div>
 			  <div class="d-flex justify-content-center mt-3">
